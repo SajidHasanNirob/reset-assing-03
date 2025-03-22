@@ -44,11 +44,25 @@
 <body class="man-rope">
 
     <!-- header section -->
-    <header class="md:container md:mx-auto">
+    <header class="md:container md:mx-auto px-4">
         <nav>
             <div class="navbar bg-base-100">
-                <div class="navbar-start gap-1 text-center items-center">
-                    <div class="dropdown">
+                <div class="navbar-start lg:text-center lg:items-center flex items-center justify-between w-full lg:w-1/2">
+
+                    <div class="flex items-center gap-2">
+                        <div class="btn btn-xs btn-circle bg-[#ABEF5F] text-black hover:bg-[#94D850]">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+                                <path fill-rule="evenodd"
+                                    d="M4.22 11.78a.75.75 0 0 1 0-1.06L9.44 5.5H5.75a.75.75 0 0 1 0-1.5h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V6.56l-5.22 5.22a.75.75 0 0 1-1.06 0Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+    
+                        </div>
+                        <h2 class="font-extrabold text-2xl">Rinterio</h2>
+                    </div>
+                    <!-- dropdown Menu -->
+                    <div class="dropdown lg:hidden bg-[#E9E9E9] rounded-full ">
                         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
@@ -57,7 +71,7 @@
                             </svg>
                         </div>
                         <ul tabindex="0"
-                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-[#737373] text-sm	hover:text-black">
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-40 p-2 shadow text-[#737373] text-sm hover:text-black">
                             <li class="hover:font-extrabold"><a>Home</a></li>
                             <li class="hover:font-extrabold"><a>Services</a></li>
                             <li class="hover:font-extrabold"><a>Protfolio</a></li>
@@ -66,16 +80,6 @@
 
                         </ul>
                     </div>
-                    <div class="btn btn-xs btn-circle bg-[#ABEF5F] text-black hover:bg-[#94D850]">
-
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
-                            <path fill-rule="evenodd"
-                                d="M4.22 11.78a.75.75 0 0 1 0-1.06L9.44 5.5H5.75a.75.75 0 0 1 0-1.5h5.5a.75.75 0 0 1 .75.75v5.5a.75.75 0 0 1-1.5 0V6.56l-5.22 5.22a.75.75 0 0 1-1.06 0Z"
-                                clip-rule="evenodd" />
-                        </svg>
-
-                    </div>
-                    <h2 class="font-extrabold text-2xl">Rinterio</h2>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1 text-[#737373] text-sm gap-4 hover:text-black">
@@ -86,8 +90,9 @@
                         <li class="hover:font-extrabold"><a>Contact Us</a></li>
                     </ul>
                 </div>
-                <div class="navbar-end gap-2">
+                <div class="navbar-end gap-2 text-lg hidden md:flex">
 
+                    <!-- Search and cart icon -->
                     <a class="btn btn-circle bg-[#E9E9E9] rounded-full hover:bg-white" href="">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
                             <path fill-rule="evenodd"
@@ -119,6 +124,8 @@
 
                         </div>
                     </a>
+
+
                 </div>
             </div>
         </nav>
@@ -127,9 +134,10 @@
         <div class="hero bg-white mb-10">
             <div class="hero-content text-center ">
                 <div class="mx-auto">
-                    <img class="my-3 mx-auto w-full lg:w-1/2" src="./images/banner.png" alt="">
-                    <h1 class="text-5xl font-bold">A barn house of this design has a <br> striking appearance</h1>
-                    <p class="py-6">
+                    <img class="my-3 mx-auto w-11/12 md:w-2/3 lg:w-1/2" src="./images/banner.png" alt="">
+                    <h1 class="text-3xl md:text-5xl font-bold mb-4">A barn house of this design has a <br> striking
+                        appearance</h1>
+                    <p class="py-4 md:py-6">
                         The barn house captivates with its blend of rustic charm and modern sophistication, featuring
                         <br> weathered wood, sleek metal accents, and large windows that flood the space with natural
                         light.
